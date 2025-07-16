@@ -68,7 +68,7 @@ const PlantCard: React.FC = () => {
               <img
                 src={p.image}
                 alt={p.title}
-                className="w-full md:h-[60vh] h-[200px] object-cover"
+                className="w-full h-[60vh]  object-cover"
                 loading="lazy"
               />
             </div>

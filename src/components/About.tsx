@@ -6,10 +6,10 @@ const About = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
   const stats = [
-    { icon: Users, number: "500+", label: "Happy Clients" },
-    { icon: Leaf, number: "1000+", label: "Gardens Created" },
-    { icon: Award, number: "15+", label: "Years Experience" },
-    { icon: Heart, number: "100%", label: "Satisfaction" },
+    { icon: Users, number: "x+", label: "Happy Clients" },
+    { icon: Leaf, number: "x+", label: "Gardens Created" },
+    { icon: Award, number: "x+", label: "Years Experience" },
+    { icon: Heart, number: "x+", label: "Satisfaction" },
   ];
 
   return (

@@ -55,7 +55,7 @@ const Footer = () => {
             >
               <Leaf className="w-8 h-8 text-emerald-400" />
               <span className="text-2xl font-playfair font-bold">
-                GreenSpace
+                InfiniteGreenSpace
               </span>
             </div>
             <p
@@ -176,7 +176,7 @@ const Footer = () => {
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             © 2025 GreenSpace. All rights reserved.
           </p>
-          <div className="flex space-x-6 text-sm">
+          {/* <div className="flex space-x-6 text-sm">
             <a
               href="#"
               className="text-gray-400 hover:text-emerald-400 transition-colors"
@@ -189,7 +189,7 @@ const Footer = () => {
             >
               Terms of Service
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

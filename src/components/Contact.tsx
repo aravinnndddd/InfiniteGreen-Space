@@ -1,40 +1,40 @@
-import { useState } from "react";
-import { Mail, Phone, Send } from "lucide-react";
+// import { useState } from "react";
+import { Mail, Phone } from "lucide-react";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 import styles from "../styles/animations.module.css";
 
 const Contact = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
+  // const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+  //   // Simulate form submission
+  //   await new Promise((resolve) => setTimeout(resolve, 1500));
 
-    // Reset form
-    setFormData({ name: "", email: "", message: "" });
-    setIsSubmitting(false);
+  //   // Reset form
+  //   setFormData({ name: "", email: "", message: "" });
+  //   setIsSubmitting(false);
 
-    // Show success message (you can implement your own notification system)
-    alert("Thank you for your message! We'll get back to you soon.");
-  };
+  //   // Show success message (you can implement your own notification system)
+  //   alert("Thank you for your message! We'll get back to you soon.");
+  // };
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // const handleChange = (
+  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  // ) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
 
   const contactInfo = [
     {
@@ -111,7 +111,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div
+          {/* <div
             className={`${
               isVisible ? styles.fadeInRight : styles.animateOnScroll
             } ${styles.delay400}`}
@@ -200,7 +200,7 @@ const Contact = () => {
                 </button>
               </div>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
