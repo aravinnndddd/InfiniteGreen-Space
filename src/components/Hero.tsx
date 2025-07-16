@@ -15,7 +15,7 @@ const Hero = () => {
       className="min-h-screen relative overflow-hidden flex items-center"
     >
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black" />
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black" />
 
       {/* Background Image Overlay */}
       <div
