@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className={`text-center mb-16  min-h-screen relative overflow-hidden flex items-center`}
+      className={`text-center pb-10 min-h-screen relative overflow-hidden flex items-center`}
     >
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-green-900 to-black" />

@@ -18,6 +18,9 @@
   width: 150px;
 
   animation: loading 2s forwards;
+  @media screen and (max-width: 768px) {
+    width: 90px;
+  }
 }
 @keyframes loading {
   0% {

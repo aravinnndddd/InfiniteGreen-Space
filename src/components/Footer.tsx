@@ -1,4 +1,4 @@
-import { Leaf, Mail, Phone, Facebook, Instagram, Twitter } from "lucide-react";
+import { Mail, Phone, Instagram } from "lucide-react";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 import styles from "../styles/animations.module.css";
 
@@ -28,9 +28,11 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/infinite_green_space/",
+      label: "Instagram",
+    },
   ];
 
   return (
@@ -48,8 +50,7 @@ const Footer = () => {
                 isVisible ? styles.fadeInUp : styles.animateOnScroll
               }`}
             >
-              <Leaf className="w-8 h-8 text-emerald-400" />
-              <span className="text-2xl font-thin">InfiniteGreenSpace</span>
+              <span className="text-2xl font-bold">InfiniteGreenSpace</span>
             </div>
             <p
               className={`text-gray-400 mb-6 leading-relaxed ${
@@ -69,7 +70,7 @@ const Footer = () => {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className={`bg-gray-800 hover:bg-emerald-600 p-3 rounded-full transition-colors duration-200 ${styles.hoverScale}`}
+                  className={`bg-green-800 hover:bg-emerald-600 p-3 rounded-full transition-colors duration-200 ${styles.hoverScale}`}
                 >
                   <social.icon className="w-5 h-5" />
                 </a>
@@ -167,12 +168,12 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="w-[90%] h-[1px] bg-gradient-to-r from-transparent via-white to-transparent"></div>
         <div
-          className={` pt-8 flex text-center flex-col  justify-between items-center ${
+          className={` pt-8 flex text-center flex-col md:flex-row  justify-evenly items-center ${
             isVisible ? styles.fadeInUp : styles.animateOnScroll
           }`}
         >
           <p className="text-gray-400 text-center text-sm mb-4 md:mb-0">
-            © 2025 GreenSpace. All rights reserved.
+            © 2025 InfiniteGreenSpace. All rights reserved.
           </p>
           <p className="flex justify-center items-center ">
             <span>Made with</span>

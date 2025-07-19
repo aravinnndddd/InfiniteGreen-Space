@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import styles from "./plantcard.module.css";
 
 type Product = { title: string; image: string };
 
@@ -16,62 +17,46 @@ const products: Product[] = [
 ];
 
 const PlantCard: React.FC = () => {
-  // determine items per page based on screen width
   const getItemsPerPage = () => {
     const w = window.innerWidth;
-    if (w < 640) return 1; // <sm
-    if (w < 1024) return 3; // sm–lg
-    return 5; // lg+
+    if (w < 640) return 1;
+    if (w < 1024) return 3;
+    return 5;
   };
 
   const [itemsPerPage, setItemsPerPage] = useState(getItemsPerPage());
   const [startIndex, setStartIndex] = useState(0);
 
-  // update itemsPerPage on resize
   useEffect(() => {
-    const handler = () => setItemsPerPage(getItemsPerPage());
-    window.addEventListener("resize", handler);
-    return () => window.removeEventListener("resize", handler);
+    const handleResize = () => setItemsPerPage(getItemsPerPage());
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // auto‑advance every 3 s
   useEffect(() => {
     const id = setInterval(() => {
-      setStartIndex((prev) => (prev + itemsPerPage) % products.length);
+      setStartIndex((prev) => (prev + 1) % products.length);
     }, 3000);
     return () => clearInterval(id);
   }, [itemsPerPage]);
 
-  // figure out which products to show
-  const visibleItems = products
-    .slice(startIndex, startIndex + itemsPerPage)
-    .concat(
-      products.slice(
-        0,
-        Math.max(0, startIndex + itemsPerPage - products.length)
-      )
-    );
+  const visibleItems = Array.from({ length: itemsPerPage }, (_, i) => {
+    const index = (startIndex + i) % products.length;
+    return products[index];
+  });
 
   return (
-    <section
-      id="products"
-      className="w-full py-8 bg-gradient-to-b from-black to-green-950 overflow-hidden"
-    >
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-6 text-center font-playfair text-gray-200">
-          Our Plants
-        </h2>
+    <section id="products" className={styles.container}>
+      <div className={styles.wrapper}>
+        <h2 className={styles.heading}>Our Plants</h2>
 
-        <div className="flex gap-4 transition-all duration-700 ease-in-out">
+        <div className={styles.carouselTrack}>
           {visibleItems.map((p, i) => (
-            <div
-              key={i}
-              className="flex-shrink-0 w-full sm:w-1/3 lg:w-1/5 rounded-lg overflow-hidden shadow-md"
-            >
+            <div key={i} className={styles.card}>
               <img
                 src={p.image}
                 alt={p.title}
-                className="w-full h-[60vh]  object-cover"
+                className={styles.cardImage}
                 loading="lazy"
               />
             </div>
