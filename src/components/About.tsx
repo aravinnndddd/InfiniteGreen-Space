@@ -43,9 +43,9 @@ const About = () => {
           >
             <div className="relative">
               <img
-                src="./garden.webp"
+                src="./images/indoor_7.jpeg"
                 alt="Beautiful garden design"
-                className="rounded-2xl shadow-2xl"
+                className="rounded-2xl shadow-2xl object-cover w-[80%] h-[300px] md:h-[400px]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-400/20 to-transparent rounded-2xl" />
             </div>

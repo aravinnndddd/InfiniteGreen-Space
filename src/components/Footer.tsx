@@ -70,9 +70,10 @@ const Footer = () => {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className={`bg-green-800 hover:bg-emerald-600 p-3 rounded-full transition-colors duration-200 ${styles.hoverScale}`}
+                  className={`bg-green-800 w-fit flex justify-center items-center px-3 hover:bg-emerald-600 p-3 gap-2 rounded-full transition-colors duration-200 ${styles.hoverScale}`}
                 >
                   <social.icon className="w-5 h-5" />
+                  <span>{social.label}</span>
                 </a>
               ))}
             </div>
@@ -143,7 +144,9 @@ const Footer = () => {
             >
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-emerald-400" />
-                <span className="text-gray-400">hello@greenspace.com</span>
+                <span className="text-gray-400">
+                  infinitegreenspace@gmail.com
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-emerald-400" />
@@ -175,7 +178,7 @@ const Footer = () => {
           <p className="text-gray-400 text-center text-sm mb-4 md:mb-0">
             © 2025 InfiniteGreenSpace. All rights reserved.
           </p>
-          <p className="flex justify-center items-center ">
+          <p className="flex gap-2 justify-center items-center ">
             <span>Made with</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -191,7 +194,14 @@ const Footer = () => {
                 fill="#FF4048"
               ></path>
             </svg>
-            <span className=""> | by Cad Design</span>
+            <span>| by</span>
+            <a
+              className="font-bold"
+              target="_blank"
+              href="https://ig.me/m/cad__designs/"
+            >
+              Cad Design
+            </a>
           </p>
           {/* <div className="flex space-x-6 text-sm">
             <a

@@ -40,14 +40,12 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      value: "qqqq@qqqqq.com",
-      description: "Send us an email anytime",
+      value: "infinitegreenspace@gmail.com",
     },
     {
       icon: Phone,
       title: "Call Us",
       value: "9446611887 , 9074569608",
-      description: "time ",
     },
   ];
 
@@ -107,7 +105,7 @@ const Contact = () => {
                       {info.title}
                     </h4>
                     <p className="text-white font-medium">{info.value}</p>
-                    <p className="text-white text-sm">{info.description}</p>
+                    {/* <p className="text-white text-sm">{info.description}</p> */}
                   </div>
                 </div>
               ))}

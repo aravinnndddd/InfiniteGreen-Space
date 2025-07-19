@@ -79,7 +79,7 @@ const Navbar = () => {
           {/* Mobile Navigation */}
           {isMobileMenuOpen && (
             <div
-              className={`md:hidden mt-4 bg-white/95 backdrop-blur-md rounded-lg shadow-lg p-4 ${styles.fadeInUp}`}
+              className={`md:hidden mt-4  rounded-lg shadow-lg p-4 ${styles.fadeInUp}`}
             >
               {navLinks.map((link) => (
                 <button

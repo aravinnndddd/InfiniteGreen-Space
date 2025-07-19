@@ -57,8 +57,7 @@ const Hero = () => {
               onClick={() => scrollToSection("services")}
               className={`border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full font-semibold text-lg flex items-center space-x-2 transition-all duration-300 ${styles.buttonHover}`}
             >
-              <Play size={20} />
-              <span>Show more</span>
+              <span>Our Services</span>
             </button>
           </div>
         </div>
