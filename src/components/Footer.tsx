@@ -50,7 +50,10 @@ const Footer = () => {
                 isVisible ? styles.fadeInUp : styles.animateOnScroll
               }`}
             >
-              <span className="text-2xl font-bold">InfiniteGreenSpace</span>
+              <h3 className="text-3xl font-playfair font-bold  text-gray-200">
+                <span className="text-green-500">InfiniteGreenSpace</span>
+                <span className="font-thin text-[15px] pl-1">by Jino</span>
+              </h3>
             </div>
             <p
               className={`text-gray-400 mb-6 leading-relaxed ${

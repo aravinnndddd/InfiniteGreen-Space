@@ -25,7 +25,8 @@ const About = () => {
           }`}
         >
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
-            About <span className="text-emerald-600">GreenSpace</span>
+            About <span className="text-emerald-600">InfiniteGreenSpace</span>
+            <span className="font-thin text-[15px] pl-1">by Jino</span>
           </h2>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Discover a wide variety of plants from vibrant flowers to lush
@@ -57,7 +58,8 @@ const About = () => {
             } ${styles.delay400}`}
           >
             <h3 className="text-3xl font-playfair font-bold text-gray-200">
-              GreenSpace
+              <span className="text-emerald-600">InfiniteGreenSpace</span>
+              <span className="font-thin text-[15px] pl-1">by Jino</span>
             </h3>
             <p className="text-gray-400 leading-relaxed">
               Discover a wide variety of plants from vibrant flowers to lush
