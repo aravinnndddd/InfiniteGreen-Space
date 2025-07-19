@@ -15,7 +15,7 @@ const Hero = () => {
       className="min-h-screen relative overflow-hidden flex items-center"
     >
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black" />
+      <div className="absolute inset-0 bg-green-900 to-black" />
 
       {/* Background Image Overlay */}
       <div
@@ -43,13 +43,13 @@ const Hero = () => {
           <div
             className={`flex flex-col sm:flex-row gap-6 justify-center items-center ${styles.heroButtons}`}
           >
-            <button
-              onClick={() => scrollToSection("contact")}
+            <a
+              href="https://ig.me/m/infinite_green_space"
               className={`bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center space-x-2 transition-all duration-300 shadow-xl hover:shadow-2xl ${styles.buttonHover}`}
             >
               <span>Shop Now</span>
               <ArrowRight size={20} />
-            </button>
+            </a>
 
             <button
               onClick={() => scrollToSection("services")}
@@ -70,6 +70,7 @@ const Hero = () => {
           />
         </div>
       </div>
+      <div className="absolute bottom-[2px] left-1/2 transform -translate-x-1/2 w-[90%] h-[1px]  bg-gradient-to-r from-transparent via-white to-transparent  " />
     </section>
   );
 };

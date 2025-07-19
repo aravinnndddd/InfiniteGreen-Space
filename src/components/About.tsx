@@ -13,17 +13,21 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-50" ref={ref}>
+    <section
+      id="about"
+      className="py-20 bg-gradient-to-b from-green-900 to-black"
+      ref={ref}
+    >
       <div className="container mx-auto px-6">
         <div
           className={`text-center mb-16 ${
             isVisible ? styles.fadeInUp : styles.animateOnScroll
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
             About <span className="text-emerald-600">GreenSpace</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Discover a wide variety of plants from vibrant flowers to lush
             indoor greens, all in one place. Whether you're a seasoned gardener
             or just starting out, GreenSpace helps you transform any space into
@@ -43,7 +47,7 @@ const About = () => {
                 alt="Beautiful garden design"
                 className="rounded-2xl shadow-2xl"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/20 to-transparent rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-t from-emerald-400/20 to-transparent rounded-2xl" />
             </div>
           </div>
 
@@ -52,17 +56,17 @@ const About = () => {
               isVisible ? styles.fadeInRight : styles.animateOnScroll
             } ${styles.delay400}`}
           >
-            <h3 className="text-3xl font-playfair font-bold text-gray-900">
+            <h3 className="text-3xl font-playfair font-bold text-gray-200">
               GreenSpace
             </h3>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed">
               Discover a wide variety of plants from vibrant flowers to lush
               indoor greens, all in one place. Whether you're a seasoned
               gardener or just starting out, GreenSpace helps you transform any
               space into a living, breathing paradise. Shop, learn, and grow
               with us.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed">
               Discover a wide variety of plants from vibrant flowers to lush
               indoor greens, all in one place. Whether you're a seasoned
               gardener or just starting out, GreenSpace helps you transform any
@@ -91,13 +95,13 @@ const About = () => {
         >
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-full mb-4">
-                <stat.icon className="w-8 h-8 text-emerald-600" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-emerald-900 rounded-full mb-4">
+                <stat.icon className="w-8 h-8 text-emerald-100" />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">
+              <div className="text-3xl font-bold text-gray-300 mb-2">
                 {stat.number}
               </div>
-              <div className="text-gray-600">{stat.label}</div>
+              <div className="text-gray-400">{stat.label}</div>
             </div>
           ))}
         </div>

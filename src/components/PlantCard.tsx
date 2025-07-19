@@ -53,9 +53,12 @@ const PlantCard: React.FC = () => {
     );
 
   return (
-    <section id="products" className="w-full py-8 overflow-hidden">
+    <section
+      id="products"
+      className="w-full py-8 bg-gradient-to-b from-black to-green-950 overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-6 text-center font-playfair text-emerald-800">
+        <h2 className="text-3xl font-bold mb-6 text-center font-playfair text-gray-200">
           Our Plants
         </h2>
 

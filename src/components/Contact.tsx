@@ -46,23 +46,27 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      value: "1234567890",
+      value: "9446611887 , 9074569608",
       description: "time ",
     },
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white" ref={ref}>
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-b from-green-950 to-green-800"
+      ref={ref}
+    >
       <div className="container mx-auto px-6">
         <div
           className={`text-center mb-16 ${
             isVisible ? styles.fadeInUp : styles.animateOnScroll
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-gray-200 mb-6">
             Let's <span className="text-emerald-600">Connect</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Ready to transform your outdoor space? Get in touch with us to
             discuss your garden dreams and receive a personalized consultation.
           </p>
@@ -76,10 +80,10 @@ const Contact = () => {
             } ${styles.delay200}`}
           >
             <div>
-              <h3 className="text-2xl font-playfair font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl font-playfair font-bold text-gray-200 mb-6">
                 Get in Touch
               </h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <p className="text-gray-300 mb-8 leading-relaxed">
                 We'd love to hear about your garden project. Whether you're
                 starting from scratch or looking to enhance an existing space,
                 our team is here to help bring your vision to life.
@@ -99,11 +103,11 @@ const Contact = () => {
                     <info.icon className="w-6 h-6 text-emerald-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
+                    <h4 className="font-semibold text-emerald-500 mb-1">
                       {info.title}
                     </h4>
-                    <p className="text-emerald-600 font-medium">{info.value}</p>
-                    <p className="text-gray-500 text-sm">{info.description}</p>
+                    <p className="text-white font-medium">{info.value}</p>
+                    <p className="text-white text-sm">{info.description}</p>
                   </div>
                 </div>
               ))}

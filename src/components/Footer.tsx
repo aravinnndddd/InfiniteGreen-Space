@@ -1,12 +1,4 @@
-import {
-  Leaf,
-  Mail,
-  Phone,
-  MapPin,
-  Facebook,
-  Instagram,
-  Twitter,
-} from "lucide-react";
+import { Leaf, Mail, Phone, Facebook, Instagram, Twitter } from "lucide-react";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 import styles from "../styles/animations.module.css";
 
@@ -29,11 +21,10 @@ const Footer = () => {
   ];
 
   const services = [
-    "qwertyuiop",
-    "qwertyuiop",
-    "qwertyuiop",
-    "qwertyuiop",
-    "qwertyuiop",
+    "Indoor plants",
+    "Interior Design",
+    "Landscaping",
+    "Welcome Gift",
   ];
 
   const socialLinks = [
@@ -43,7 +34,11 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white py-16" ref={ref}>
+    <footer
+      className="bg-gradient-to-b  border-t-emerald-600 from-green-800 to-black text-white pt-16 pb-5"
+      ref={ref}
+    >
+      <div className="w-[90%] h-[1px] bg-gradient-to-r from-transparent via-white to-transparent flex rounded-full justify-center mx-auto mb-12"></div>
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand Section */}
@@ -54,9 +49,7 @@ const Footer = () => {
               }`}
             >
               <Leaf className="w-8 h-8 text-emerald-400" />
-              <span className="text-2xl font-playfair font-bold">
-                InfiniteGreenSpace
-              </span>
+              <span className="text-2xl font-thin">InfiniteGreenSpace</span>
             </div>
             <p
               className={`text-gray-400 mb-6 leading-relaxed ${
@@ -87,7 +80,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3
-              className={`text-lg font-semibold mb-6 ${
+              className={`text-lg  mb-6 ${
                 isVisible ? styles.fadeInUp : styles.animateOnScroll
               }`}
             >
@@ -114,7 +107,7 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h3
-              className={`text-lg font-semibold mb-6 ${
+              className={`text-lg  mb-6 ${
                 isVisible ? styles.fadeInUp : styles.animateOnScroll
               }`}
             >
@@ -136,7 +129,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3
-              className={`text-lg font-semibold mb-6 ${
+              className={`text-lg  mb-6 ${
                 isVisible ? styles.fadeInUp : styles.animateOnScroll
               }`}
             >
@@ -153,28 +146,51 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-emerald-400" />
-                <span className="text-gray-400">1234567890</span>
+                <div>
+                  <span className="text-gray-400">9446611887</span>
+                  <br />
+                  <span className="text-gray-400">9074569608</span>
+                </div>
               </div>
-              <div className="flex items-start space-x-3">
+              {/* <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-emerald-400 mt-0.5" />
                 <span className="text-gray-400">
                   asdfghjkl
                   <br />
                   asdfghjkl 123
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
 
         {/* Bottom Section */}
+        <div className="w-[90%] h-[1px] bg-gradient-to-r from-transparent via-white to-transparent"></div>
         <div
-          className={`border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center ${
+          className={` pt-8 flex text-center flex-col  justify-between items-center ${
             isVisible ? styles.fadeInUp : styles.animateOnScroll
           }`}
         >
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
+          <p className="text-gray-400 text-center text-sm mb-4 md:mb-0">
             © 2025 GreenSpace. All rights reserved.
+          </p>
+          <p className="flex justify-center items-center ">
+            <span>Made with</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="12"
+              viewBox="0 0 14 12"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.82587 1.81074C2.43755 1.19924 3.26705 0.85572 4.13197 0.85572C4.99689 0.85572 5.82639 1.19924 6.43807 1.81074L7.39379 2.76563L8.3495 1.81074C8.65039 1.4992 9.01031 1.25071 9.40827 1.07976C9.80622 0.908809 10.2342 0.818828 10.6673 0.815065C11.1004 0.811301 11.53 0.893831 11.9308 1.05784C12.3317 1.22184 12.6959 1.46404 13.0021 1.77031C13.3084 2.07657 13.5506 2.44075 13.7146 2.84162C13.8786 3.24248 13.9611 3.672 13.9574 4.1051C13.9536 4.5382 13.8636 4.96622 13.6927 5.36417C13.5217 5.76213 13.2732 6.12205 12.9617 6.42294L7.39379 11.9917L1.82587 6.42294C1.21437 5.81126 0.87085 4.98176 0.87085 4.11684C0.87085 3.25192 1.21437 2.42242 1.82587 1.81074Z"
+                fill="#FF4048"
+              ></path>
+            </svg>
+            <span className=""> | by Cad Design</span>
           </p>
           {/* <div className="flex space-x-6 text-sm">
             <a
