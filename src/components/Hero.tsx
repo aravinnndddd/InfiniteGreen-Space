@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUp, Play } from "lucide-react";
+import { ArrowRight, ArrowUp } from "lucide-react";
 import styles from "../styles/animations.module.css";
 
 const Hero = () => {
