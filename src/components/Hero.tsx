@@ -1,6 +1,5 @@
 import { ArrowRight, ArrowUp, Play } from "lucide-react";
 import styles from "../styles/animations.module.css";
-import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
