@@ -254,7 +254,6 @@
   }
 }
 
-/* Testimonial slide animations */
 .slide-enter {
   animation: slideInRight 0.5s ease-out forwards;
 }

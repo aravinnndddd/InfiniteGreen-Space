@@ -1,5 +1,6 @@
 import { ArrowRight, ArrowUp, Play } from "lucide-react";
 import styles from "../styles/animations.module.css";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -12,7 +13,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen relative overflow-hidden flex items-center"
+      className={`text-center mb-16  min-h-screen relative overflow-hidden flex items-center`}
     >
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-green-900 to-black" />
@@ -24,7 +25,9 @@ const Hero = () => {
       />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
+      <div
+        className={`${styles.fadeInUp} relative z-10 container mx-auto px-6 text-center`}
+      >
         <div className="max-w-4xl mx-auto">
           <h1
             className={`text-5xl md:text-7xl font-playfair font-bold text-white mb-6 leading-tight ${styles.heroTitle}`}

@@ -7,22 +7,39 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import PlantCard from "./components/PlantCard";
+import { useEffect, useState } from "react";
+import GreenSpaceLoader from "./components/loader"; // your loader component
 
 function App() {
+  const [loading, setLoading] = useState(true); // show loader initially
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <Router>
-      <div className="font-inter">
-        <Navbar />
-        <main>
-          <Hero />
-          <About />
-          <Services />
-          <PlantCard />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <>
+      {loading ? (
+        <GreenSpaceLoader />
+      ) : (
+        <Router>
+          <div className="font-inter">
+            <Navbar />
+            <main>
+              <Hero />
+              <About />
+              <Services />
+              <PlantCard />
+              <Contact />
+            </main>
+            <Footer />
+          </div>
+        </Router>
+      )}
+    </>
   );
 }
 
