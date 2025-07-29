@@ -17,14 +17,14 @@ const Services = () => {
       description:
         "We design interiors that breathe. Our nature-inspired setups combine greenery with elegance to create tranquil, uplifting environments.",
 
-      image: "./images/indoor_6.jpeg",
+      image: "./images/interior.jpeg",
     },
     {
       title: "Landscaping",
       description:
         "From planning to planting, we craft beautiful, sustainable landscapes tailored to your space be it a cozy garden or a grand outdoor area.",
 
-      image: "./garden.webp",
+      image: "./images/landscaping.jpeg",
     },
     {
       title: "Welcome Gift",
@@ -63,7 +63,7 @@ const Services = () => {
               }`}
             >
               <div
-                className={` rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 h-full backdrop-blur-2xl ${styles.hoverLift}`}
+                className={` rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-200 overflow-hidden border border-gray-100 h-full backdrop-blur-2xl ${styles.hoverLift}`}
               >
                 <div className="relative overflow-hidden">
                   <img
@@ -72,7 +72,6 @@ const Services = () => {
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/20 to-transparent" />
-                  <div className="absolute top-4 left-4 bg-black/90 backdrop-blur-sm rounded-full p-3"></div>
                 </div>
 
                 <div className="p-6">

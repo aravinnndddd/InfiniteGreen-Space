@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
 
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import PlantCard from "./components/PlantCard";
 import { useEffect, useState } from "react";
@@ -33,7 +33,7 @@ function App() {
               <About />
               <Services />
               <PlantCard />
-              <Contact />
+              {/* <Contact /> */}
             </main>
             <Footer />
           </div>

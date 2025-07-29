@@ -15,7 +15,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20 bg-gradient-to-b from-green-900 to-black"
+      className="py-10 bg-gradient-to-b from-green-950 to-black"
       ref={ref}
     >
       <div className="container mx-auto px-6">
@@ -24,20 +24,25 @@ const About = () => {
             isVisible ? styles.fadeInUp : styles.animateOnScroll
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
-            About{" "}
-            <span className="">
-              <span className="text-emerald-600">InfiniteGreenSpace</span>
-              <span className="font-thin text-[25px]  md:mt-0 mt-[-9px] pl-1 jino flex justify-center">
-                by Jino
-              </span>
+          {" "}
+          <span className="text-white text-[20px] font-bold"> About</span>
+          <h3 className="text-3xl font-playfair font-bold  relative text-gray-200">
+            <span className="text-emerald-400 text-[30px]  md:justify-center md:items-center Fugaz">
+              Infinite Green Space
             </span>
-          </h2>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+            <span className="font-thin text-[25px] pl-1 hidden md:flex md:justify-center md:  jino ">
+              by Jino
+            </span>
+            <span className="font-thin text-[25px] pl-1 absolute left-[258px] top-6 md:hidden  jino ">
+              by Jino
+            </span>
+          </h3>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto mt-10">
             Discover a wide variety of plants from vibrant flowers to lush
             indoor greens, all in one place. Whether you're a seasoned gardener
-            or just starting out, GreenSpace helps you transform any space into
-            a living, breathing paradise. Shop, learn, and grow with us.
+            or just starting out, Infinite Green Space by Jino helps you
+            transform any space into a living, breathing paradise. Shop, learn,
+            and grow with us.
           </p>
         </div>
 
@@ -61,24 +66,31 @@ const About = () => {
               isVisible ? styles.fadeInRight : styles.animateOnScroll
             } ${styles.delay400}`}
           >
-            <h3 className="text-3xl font-playfair font-bold text-gray-200">
-              <span className="text-emerald-600">InfiniteGreenSpace</span>
-              <span className="font-thin text-[15px] pl-1 jino">by Jino</span>
+            <h3 className="text-3xl font-playfair font-bold  relative text-gray-200">
+              <span className="text-emerald-600 text-[30px]  md:justify-center md:items-center Fugaz">
+                Infinite Green Space
+              </span>
+              <span className="font-thin text-[25px] pl-1 absolute left-[255px] top-6 flex justify-end md:justify-center md:items-center jino">
+                by Jino
+              </span>
             </h3>
+
             <p className="text-gray-400 leading-relaxed">
-              Discover a wide variety of plants from vibrant flowers to lush
-              indoor greens, all in one place. Whether you're a seasoned
-              gardener or just starting out, GreenSpace helps you transform any
-              space into a living, breathing paradise. Shop, learn, and grow
-              with us.
+              At Infinite Green Space by Jino, we turn spaces into soulful green
+              sanctuaries blending elegance, wellness, and a touch of fun. From
+              curated indoor plants and aesthetic pots to personalized green
+              decor and plant gifts, we bring calm, class, and character into
+              every home or workspace.
             </p>
+            <br />
             <p className="text-gray-400 leading-relaxed">
-              Discover a wide variety of plants from vibrant flowers to lush
-              indoor greens, all in one place. Whether you're a seasoned
-              gardener or just starting out, GreenSpace helps you transform any
-              space into a living, breathing paradise. Shop, learn, and grow
-              with us.
+              Whether you're a plant lover, a busy beginner, or someone seeking
+              peace in your daily routine, we design with care and creativity.
+              It’s not just about adding greens it’s about styling a lifestyle
+              that breathes. Discover the art of living with nature beautifully
+              rooted, consciously curated, and always full of fresh vibes.
             </p>
+
             {/* <div className="flex flex-wrap gap-4">
               <span className="bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-semibold">
                 Sustainable Design

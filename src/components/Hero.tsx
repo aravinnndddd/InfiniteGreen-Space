@@ -15,7 +15,7 @@ const Hero = () => {
       className={`text-center pb-10 min-h-screen relative overflow-hidden flex items-center`}
     >
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-green-900 to-black" />
+      <div className="absolute inset-0 bg-green-950 to-black" />
 
       {/* Background Image Overlay */}
       <div
@@ -31,8 +31,8 @@ const Hero = () => {
           <h1
             className={`text-5xl md:text-7xl font-playfair font-bold text-white mb-6 leading-tight ${styles.heroTitle}`}
           >
-            Grow your green dreams
-            <span className="text-emerald-400"> With Us</span>
+            Grow your<span className="text-emerald-400"> Green Dreams </span>
+            with us
           </h1>
 
           <p
