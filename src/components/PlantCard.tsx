@@ -9,7 +9,7 @@ const products: Product[] = [
   { title: "", image: "./images/indoor_3.jpeg" },
   { title: "", image: "./images/indoor_4.jpeg" },
   { title: "", image: "./images/indoor_5.jpeg" },
-  { title: "", image: "./images/indoor_6.jpeg" },
+  { title: "", image: "./images/landscaping.jpeg" },
   { title: "", image: "./images/small_1.jpeg" },
   { title: "", image: "./images/small_2.jpeg" },
   { title: "", image: "./images/small_3.jpeg" },

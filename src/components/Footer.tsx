@@ -17,7 +17,7 @@ const Footer = () => {
     { name: "About", id: "about" },
     { name: "Services", id: "services" },
     { name: "Products", id: "products" },
-    { name: "Contact", id: "contact" },
+    // { name: "Contact", id: "contact" },
   ];
 
   const services = [
@@ -35,14 +35,14 @@ const Footer = () => {
     },
     {
       icon: Mail,
-      href: "#",
+      href: "mailto:infinitegreenspace@gmail.com",
       label: "Mail",
     },
   ];
 
   return (
     <footer
-      className="bg-gradient-to-b  border-t-emerald-600 from-green-800 to-black text-white pt-16 pb-5"
+      className="bg-gradient-to-b  border-t-emerald-600 from-green-950 to-black text-white pt-16 pb-5"
       ref={ref}
     >
       <div className="w-[90%] h-[1px] bg-gradient-to-r from-transparent via-white to-transparent flex rounded-full justify-center mx-auto mb-12"></div>
@@ -152,16 +152,23 @@ const Footer = () => {
             >
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-emerald-400" />
-                <span className="text-gray-400">
+                <a
+                  className="text-gray-400"
+                  href="mailto:infinitegreenspace@gmail.com"
+                >
                   infinitegreenspace@gmail.com
-                </span>
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-emerald-400" />
                 <div>
-                  <span className="text-gray-400">9446611887</span>
+                  <a className="text-gray-400" href="tel:9446611887">
+                    9446611887
+                  </a>
                   <br />
-                  <span className="text-gray-400">9074569608</span>
+                  <a className="text-gray-400" href="tel:9074569608">
+                    9074569608
+                  </a>
                 </div>
               </div>
               {/* <div className="flex items-start space-x-3">
