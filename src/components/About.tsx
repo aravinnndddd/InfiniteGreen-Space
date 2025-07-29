@@ -6,10 +6,10 @@ const About = () => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
   const stats = [
-    { icon: Users, number: "x+", label: "Happy Clients" },
-    { icon: Leaf, number: "x+", label: "Gardens Created" },
-    { icon: Award, number: "x+", label: "Years Experience" },
-    { icon: Heart, number: "x+", label: "Satisfaction" },
+    { icon: Users, number: "500+", label: "Happy Clients" },
+    { icon: Leaf, number: "100+", label: "Gardens Created" },
+    { icon: Award, number: "2+", label: "Years Experience" },
+    { icon: Heart, number: "100%", label: "Satisfaction" },
   ];
 
   return (
@@ -25,8 +25,13 @@ const About = () => {
           }`}
         >
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
-            About <span className="text-emerald-600">InfiniteGreenSpace</span>
-            <span className="font-thin text-[15px] pl-1">by Jino</span>
+            About{" "}
+            <span className="">
+              <span className="text-emerald-600">InfiniteGreenSpace</span>
+              <span className="font-thin text-[25px]  md:mt-0 mt-[-9px] pl-1 jino flex justify-center">
+                by Jino
+              </span>
+            </span>
           </h2>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Discover a wide variety of plants from vibrant flowers to lush
@@ -36,7 +41,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-5 items-center mb-16">
           <div
             className={`${
               isVisible ? styles.fadeInLeft : styles.animateOnScroll
@@ -46,9 +51,8 @@ const About = () => {
               <img
                 src="./images/indoor_7.jpeg"
                 alt="Beautiful garden design"
-                className="rounded-2xl shadow-2xl object-cover w-[80%] h-[300px] md:h-[400px]"
+                className="rounded-2xl shadow-2xl object-cover w-[80%] mx-8 h-[300px] md:h-[400px]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-400/20 to-transparent rounded-2xl" />
             </div>
           </div>
 
@@ -59,7 +63,7 @@ const About = () => {
           >
             <h3 className="text-3xl font-playfair font-bold text-gray-200">
               <span className="text-emerald-600">InfiniteGreenSpace</span>
-              <span className="font-thin text-[15px] pl-1">by Jino</span>
+              <span className="font-thin text-[15px] pl-1 jino">by Jino</span>
             </h3>
             <p className="text-gray-400 leading-relaxed">
               Discover a wide variety of plants from vibrant flowers to lush
