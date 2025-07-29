@@ -33,6 +33,11 @@ const Footer = () => {
       href: "https://www.instagram.com/infinite_green_space/",
       label: "Instagram",
     },
+    {
+      icon: Mail,
+      href: "#",
+      label: "Mail",
+    },
   ];
 
   return (
@@ -52,7 +57,7 @@ const Footer = () => {
             >
               <h3 className="text-3xl font-playfair font-bold  text-gray-200">
                 <span className="text-green-500">InfiniteGreenSpace</span>
-                <span className="font-thin text-[15px] pl-1">by Jino</span>
+                <span className="font-thin text-[15px] pl-1 jino">by Jino</span>
               </h3>
             </div>
             <p
@@ -73,7 +78,7 @@ const Footer = () => {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className={`bg-green-800 w-fit flex justify-center items-center px-3 hover:bg-emerald-600 p-3 gap-2 rounded-full transition-colors duration-200 ${styles.hoverScale}`}
+                  className={`bg-green-800 w-[120px] flex justify-center items-center px-3 hover:bg-emerald-600 p-3 gap-2 rounded-full transition-colors duration-200 ${styles.hoverScale}`}
                 >
                   <social.icon className="w-5 h-5" />
                   <span>{social.label}</span>

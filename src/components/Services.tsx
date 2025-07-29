@@ -31,7 +31,7 @@ const Services = () => {
       description:
         "Make a lasting impression with our plant-based gift packages. Thoughtful, eco-friendly, and perfect for any occasion  green is the new gesture.",
 
-      image: "./images/small_1.jpeg",
+      image: "./images/welcome.jpeg",
     },
   ];
 

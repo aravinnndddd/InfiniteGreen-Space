@@ -9,4 +9,8 @@ html {
   font-weight: 600;
   font-style: normal;
 } */
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
+.jino {
+  font-family: "Birthstone";
+}
 @import "tailwindcss";
