@@ -15,7 +15,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-10 bg-gradient-to-b from-green-900 to-black"
+      className="py-10 bg-gradient-to-b from-green-950 to-black"
       ref={ref}
     >
       <div className="container mx-auto px-6">
@@ -27,7 +27,7 @@ const About = () => {
           {" "}
           <span className="text-white text-[20px] font-bold"> About</span>
           <h3 className="text-3xl font-playfair font-bold  relative text-gray-200">
-            <span className="text-emerald-600 text-[30px]  md:justify-center md:items-center Fugaz">
+            <span className="text-emerald-400 text-[30px]  md:justify-center md:items-center Fugaz">
               Infinite Green Space
             </span>
             <span className="font-thin text-[25px] pl-1 hidden md:flex md:justify-center md:  jino ">
@@ -40,8 +40,9 @@ const About = () => {
           <p className="text-xl text-gray-200 max-w-3xl mx-auto mt-10">
             Discover a wide variety of plants from vibrant flowers to lush
             indoor greens, all in one place. Whether you're a seasoned gardener
-            or just starting out, GreenSpace helps you transform any space into
-            a living, breathing paradise. Shop, learn, and grow with us.
+            or just starting out, Infinite Green Space by Jino helps you
+            transform any space into a living, breathing paradise. Shop, learn,
+            and grow with us.
           </p>
         </div>
 
@@ -76,9 +77,8 @@ const About = () => {
             <p className="text-gray-400 leading-relaxed pt-2">
               Discover a wide variety of plants from vibrant flowers to lush
               indoor greens, all in one place. Whether you're a seasoned
-              gardener or just starting out, GreenSpace helps you transform any
-              space into a living, breathing paradise. Shop, learn, and grow
-              with us.
+              gardener or just starting out, helps you transform any space into
+              a living, breathing paradise. Shop, learn, and grow with us.
             </p>
             <p className="text-gray-400 leading-relaxed">
               Discover a wide variety of plants from vibrant flowers to lush
