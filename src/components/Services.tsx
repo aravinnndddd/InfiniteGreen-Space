@@ -72,7 +72,6 @@ const Services = () => {
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/20 to-transparent" />
-                  <div className="absolute top-4 left-4 bg-black/90 backdrop-blur-sm rounded-full p-3"></div>
                 </div>
 
                 <div className="p-6">

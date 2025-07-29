@@ -10,7 +10,11 @@ html {
   font-style: normal;
 } */
 @import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 .jino {
   font-family: "Birthstone";
+}
+.Fugaz {
+  font-family: "Abril Fatface";
 }
 @import "tailwindcss";

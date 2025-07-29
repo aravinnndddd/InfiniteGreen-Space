@@ -55,9 +55,13 @@ const Footer = () => {
                 isVisible ? styles.fadeInUp : styles.animateOnScroll
               }`}
             >
-              <h3 className="text-3xl font-playfair font-bold  text-gray-200">
-                <span className="text-green-500">InfiniteGreenSpace</span>
-                <span className="font-thin text-[15px] pl-1 jino">by Jino</span>
+              <h3 className="text-3xl font-playfair font-bold  relative text-gray-200">
+                <span className="text-emerald-600 text-[30px]  md:justify-center md:items-center Fugaz">
+                  Infinite Green Space
+                </span>
+                <span className="font-thin text-[25px] absolute left-[255px] top-6 flex justify-end md:justify-center md:items-center jino  w-[70px]">
+                  by Jino
+                </span>
               </h3>
             </div>
             <p
