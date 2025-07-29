@@ -74,19 +74,23 @@ const About = () => {
                 by Jino
               </span>
             </h3>
-            <p className="text-gray-400 leading-relaxed pt-2">
-              Discover a wide variety of plants from vibrant flowers to lush
-              indoor greens, all in one place. Whether you're a seasoned
-              gardener or just starting out, helps you transform any space into
-              a living, breathing paradise. Shop, learn, and grow with us.
-            </p>
+
             <p className="text-gray-400 leading-relaxed">
-              Discover a wide variety of plants from vibrant flowers to lush
-              indoor greens, all in one place. Whether you're a seasoned
-              gardener or just starting out, GreenSpace helps you transform any
-              space into a living, breathing paradise. Shop, learn, and grow
-              with us.
+              At Infinite Green Space by Jino, we turn spaces into soulful green
+              sanctuaries blending elegance, wellness, and a touch of fun. From
+              curated indoor plants and aesthetic pots to personalized green
+              decor and plant gifts, we bring calm, class, and character into
+              every home or workspace.
             </p>
+            <br />
+            <p className="text-gray-400 leading-relaxed">
+              Whether you're a plant lover, a busy beginner, or someone seeking
+              peace in your daily routine, we design with care and creativity.
+              It’s not just about adding greens it’s about styling a lifestyle
+              that breathes. Discover the art of living with nature beautifully
+              rooted, consciously curated, and always full of fresh vibes.
+            </p>
+
             {/* <div className="flex flex-wrap gap-4">
               <span className="bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-semibold">
                 Sustainable Design
