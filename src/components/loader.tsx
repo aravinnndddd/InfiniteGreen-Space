@@ -4,7 +4,7 @@ const GreenSpaceLoader = () => {
   return (
     <div className={styles.loaderContainer}>
       <div className={styles.logoWrapper}>
-        <img className={styles.brand} src="../logo.png" alt="Logo" />
+        <img className={styles.brand} src="./logo.png" alt="Logo" />
       </div>
     </div>
   );
